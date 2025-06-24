@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "get-exchange-rates-e2e-tests"
+version = "0.1.0"
+description = "E2E тесты для сбора данных о курсах обмена валют"
+authors = ["Viktor Gurko <viktorgurko@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.pytest.ini_options]
+minversion = "6.2"
+log_format = "[%(levelname)s] %(asctime)s,%(msecs)03d %(message)s"
+log_date_format = "%d-%b-%y %H:%M:%S"
+markers = [
+    "blocker: blocker, critical tests (main use cases and high risk scenarios)",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.1.0"
+requests = "^2.27.0"
+types-requests = "^2.32.0"
+allure-pytest = "2.13.1"
+pytest-rerunfailures = "^15.0"
+pytest-xdist = "^3.6.1"
+mypy = "^1.15.0"
+coverage = "^7.6.12"
+isort = "^6.0.1"
+black = "^25.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+plugins = []
+ignore_missing_imports = true
