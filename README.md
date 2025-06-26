@@ -95,7 +95,7 @@ export PATH="$HOME/.local/bin:$PATH"
 Клонируйте проект и перейдите в его директорию:
 
 ```bash
-git clone git@gitlab.com:Vikgur/cbr.ru-exchange-rates-rest-client-tests.git
+git clone git@github.com:Vikgur/cbr.ru-exchange-rates-rest-client-tests.git
 cd cbr.ru-exchange-rates-rest-client-tests
 ```
 
